@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/shazforiot/nodeapp_test.git'
+        git credentialsId: '0349950b-32c3-4ee5-883a-53cae257e4c0', url: 'https://github.com/suryan70195/nodeapp_test.git'
       }
     }
 
